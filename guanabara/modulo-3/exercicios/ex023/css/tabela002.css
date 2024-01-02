@@ -5,6 +5,7 @@ body {
 table {
     width: 500px;
     border-collapse: collapse;
+    position: relative;
 }
 
 td, th{
@@ -16,7 +17,7 @@ caption {
     font-size: 1.5em;
     font-weight: bold;
     padding: 10px;
-    background-color: lightgreen;
+    background-color: lightgray;
 }
 
 tbody > tr:nth-child(even){ /*2n*/
@@ -30,6 +31,12 @@ tbody > tr:nth-child(odd){ /*2n-1*/
 thead, tfoot {
     background-color: grey;
     color: white;
+}
+
+thead > tr > th {
+    position: sticky;
+    top: -1px;
+    background-color: gray;
 }
 
 .num {
