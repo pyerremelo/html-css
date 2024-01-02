@@ -4,9 +4,23 @@ body {
 
 table {
     border-collapse: collapse;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
 }
 
 td, th {
     border: 1px solid black;
     padding: 7px 10px;
+}
+
+thead, .media {
+    background-color: gray;
+    color: white;
+}
+
+.media {
+    text-align: left;
 }
