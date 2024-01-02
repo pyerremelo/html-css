@@ -2,7 +2,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-table, div{
+table{
     border-collapse: collapse;
     position: relative;
 }
@@ -28,5 +28,4 @@ div#container {
 
 col.table__col-1 {
     position: fixed;
-    left: 0;
 }
