@@ -17,3 +17,15 @@ th, td {
     border: 1px solid black;
     padding: 8px;
 }
+
+col.cnome {
+    background-color: lightgreen;
+}
+
+col.cgrupo {
+    background-color: #00b4d8;
+}
+
+col.cprofissao {
+    background-color: yellow;
+}
