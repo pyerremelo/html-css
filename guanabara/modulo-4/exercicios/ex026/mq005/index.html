@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <title>Media Query</title>
 </head>
+
 <body>
     <header>
         <h1>Meu site</h1>
-        <menu>
+        <i id="burguer" class="material-symbols-outlined" onclick="clicMenu()">menu</i>
+        <menu id="itens">
             <ul>
                 <li><a href="#">opção 1</a></li>
                 <li><a href="#">opção 2</a></li>
@@ -25,15 +29,38 @@
             <h2>Testando Media Query</h2>
 
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dicta fugit expedita. Ipsum quisquam maiores fugit animi nobis quidem odio nisi nulla placeat tempora, molestiae recusandae perferendis sunt. Velit, id?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id hic molestiae deleniti voluptatum! Aliquam nobis, quibusdam rem sequi suscipit deleniti eos officia ipsa illum odio labore, totam ipsum, odit laboriosam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto facere ab aliquam aut soluta, omnis velit nemo sit iste laboriosam exercitationem ullam vero, eveniet animi modi placeat quisquam quo doloremque.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dicta fugit expedita. Ipsum quisquam
+                maiores fugit animi nobis quidem odio nisi nulla placeat tempora, molestiae recusandae perferendis sunt.
+                Velit, id?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id hic molestiae deleniti voluptatum! Aliquam
+                nobis, quibusdam rem sequi suscipit deleniti eos officia ipsa illum odio labore, totam ipsum, odit
+                laboriosam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto facere ab aliquam aut soluta,
+                omnis velit nemo sit iste laboriosam exercitationem ullam vero, eveniet animi modi placeat quisquam quo
+                doloremque.
             </p>
 
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quod pariatur dicta eligendi sapiente, et, temporibus, molestiae voluptates doloremque earum vel quo aliquam ratione delectus ad accusamus. Similique, doloribus distinctio?
-                Deserunt, error! Quod ducimus, optio minima ipsum doloremque tempora omnis et tenetur placeat maxime? Autem fuga minus ullam, nisi perferendis enim praesentium iure facilis animi cum doloribus. Quos, doloribus ipsum?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quod pariatur dicta eligendi sapiente,
+                et, temporibus, molestiae voluptates doloremque earum vel quo aliquam ratione delectus ad accusamus.
+                Similique, doloribus distinctio?
+                Deserunt, error! Quod ducimus, optio minima ipsum doloremque tempora omnis et tenetur placeat maxime?
+                Autem fuga minus ullam, nisi perferendis enim praesentium iure facilis animi cum doloribus. Quos,
+                doloribus ipsum?
             </p>
         </article>
     </main>
+
+    <script>
+        function clicMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            }
+            else {
+                itens.style.display = 'block'
+            }
+            
+        }
+    </script>
 </body>
+
 </html>
