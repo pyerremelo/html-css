@@ -3,7 +3,7 @@
 /* 
     Paleta de cores
     ---------------
-    Verde-azul: #07283E
+    azul-escuro: #07283E
     Azul-claro: #C1D5DE
 */
 
@@ -39,8 +39,10 @@ section#login {
     width: 250px;
     height: 500px;
     border-radius: 20px;
+    box-shadow: 0px 0px 7px #07283E;
 
-    box-shadow: 0px 0px 7px #03045e;
+    transition: width 0.2s, heigth 0.2s;
+    transition-timing-function: ease;
 }
 
 section#login > div#imagem {
