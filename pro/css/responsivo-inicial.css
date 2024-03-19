@@ -1,0 +1,30 @@
+@media screen and (max-width: 1000px) {
+        body::-webkit-scrollbar {
+            width: 15px;
+            /* border: 1px solid white; */
+        }
+
+        body::-webkit-scrollbar-track {
+            background-color: none;
+        }
+
+        body::-webkit-scrollbar-thumb {
+            border-radius: 20px;
+            background-color: #5AA7B0;
+            border: 3px solid black;
+            /* border: 1px solid white; */
+            
+            
+        }
+}
+
+@media screen and (min-width: 1000px) {
+    #container {
+        height: 100vh;
+        overflow-y: hidden;
+    }
+
+    #usuarios {
+        margin-top: 60px;
+    }
+}

@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family-standard);
+    font-size: var(--font-size-standard);
+    background-color: var(--background-standard);
+    color: var(--white);
+}
+
+:root {
+    --font-family-standard: Helvetica, Arial, sans-serif;
+    --font-size-standard: 13px;
+    --background-standard: #0b0a0d;
+    --orange: #ff6715;
+    --green: #5AA7B0;
+    --black: #000000;
+    --white: #ffffff;
+}
+
+#container {
+    width: 100%;
+    height: 1000px;
+    
+    position: relative;
+}
+
+#container > h1 {
+    margin-top: 20px;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+#container > h1 > span {
+    background-color: var(--green);
+    /* padding: 0.15rem; */
+    padding: 0.02rem .4rem;
+}
+
+#container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-position: bottom;
+    z-index: -1;
+    opacity: .4;
+
+    background-image: url(../img/tela-fundo-2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#usuarios {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+
+}
+
+.informacoes {
+    /* margin: auto; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    margin-top: 20px;
+}
+
+.informacoes > p {
+    line-height: 1.5em;
+    text-indent: 1.5em;
+    font-size: large;
+    text-align: justify;
+    margin-top: 10px;
+
+    margin-left: 13px;
+    margin-right: 13px;
+    color: white;
+}
+
+.informacoes > h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.informacoes > h2 > u {
+    text-decoration-color: #5aa7b0a9;
+}
+
+.informacoes > p#atencao {
+    font-size: 20px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+}
+
+div.botao {
+    /* width: 100%; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* background-color: tomato; */
+}
+
+div.botao > a.btn-1 {
+
+    text-decoration: none;
+
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+
+    padding: 0.3rem 1rem;
+    align-items: center;
+
+    border: 2px solid var(--orange);
+    border-radius: 5px;
+    color: var(--white);
+    background-color: #ff6715e1; 
+}
+
+div.botao > a.btn-1:hover {
+    background-color: var(--orange);
+}
+
+div.botao > a.btn-2{
+
+    text-decoration: none;
+
+
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+
+    padding: 0.3rem 1rem;
+
+    border: 2px solid var(--green);
+    border-radius: 5px;
+    color: var(--white);
+    background-color: #5aa7b0c0; 
+}
+
+div.botao > a.btn-2:hover {
+    background-color: var(--green);
+}
+
+#bt1 {
+    margin-left: 180px;
+}
+
+#bt2 {
+    margin-left: 210px;
+}
+
+#bt3 {
+    margin-left: 190px;
+}
+
+#bt4 {
+    margin-left: 187px;
+}
