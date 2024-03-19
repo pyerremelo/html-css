@@ -1,0 +1,283 @@
+/*CONFIGURAÇÕES INICIAIS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family-standard);
+    font-size: var(--font-size-standard);
+    background-color: var(--background-standard);
+    color: var(--white)
+}
+
+:root {
+    --font-family-standard: Helvetica, Arial, sans-serif;
+    --font-size-standard: 14px;
+    --background-standard: #0b0a0d;
+    --orange: #ff6715;
+    --green: #5AA7B0;
+    --black: #000000;
+    --white: #ffffff;
+
+    --tamanho_input: 25rem;
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+}
+
+#container__background {
+    width: 100%;
+    height: calc(100% - 80px);
+
+    background-image: url(../images/moto_inicio.jpg);
+    background-position: 0 -5rem;
+    background-repeat: no-repeat;
+    background-size: 100% calc(100% + 5rem);
+}
+
+#container__background--dark {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#container__content {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+}
+
+/*HEADER*/
+#content__header {
+    height: 80px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--black);
+}
+
+#header__img {
+    width: 4.0rem;
+    margin: 0 1.6rem;
+
+    cursor: pointer;
+}
+
+#header__links {
+    width: 60%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.link__item {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.link__item:hover {
+    color: var(--green);
+}
+
+.link__item:last-of-type {
+    padding: 0.5rem;
+    border: 1px solid var(--green);
+    border-radius: 5px;
+    color: var(--green);
+}
+
+.link__item:last-of-type:hover {
+    text-decoration: none;
+}
+
+#selected {
+    pointer-events: none;
+    color: var(--green);
+}
+
+
+/*MAIN*/
+
+#content__main2 {
+    width: 50%;
+    height: 100%;
+}
+
+#content__main {
+    width: 49%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#content__main #content__title {
+    font-size: 2.2rem;
+    margin: 2rem 0 3rem 0;
+}
+
+#content__title--contrast {
+    padding: 0.15rem;
+
+    background-color: var(--orange);
+    border-radius: 5px;
+}
+
+#content__inputs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input__item {
+    margin: 1.3rem auto;
+    transform: translateX(-11.7rem);
+}
+
+.input__indicative {
+    font-size: 1rem;
+    margin-left: 0.7rem;
+    font-weight: bold;
+}
+
+#input {
+    width: var(--tamanho_input);
+    padding: 0.5rem 2.2rem 0.5rem 0.5rem;
+    font-size: 1.3rem;
+
+    position: absolute;
+
+    border: none;
+    border-radius: 12px;
+}
+
+#input:focus {
+    outline: none;
+}
+
+#icon__location {
+    position: relative;
+    transform: translateX(calc(var(--tamanho_input) - 2rem)) translateY(25%);
+    pointer-events: none;
+}
+
+#input:focus + #icon__location {
+    animation: anim_location 0.6s ease-in-out 0s 1 normal none;
+}
+
+#input2 {
+    width: var(--tamanho_input);
+    padding: 0.5rem 2.2rem 0.5rem 0.5rem;
+    font-size: 1.3rem;
+
+    position: absolute;
+
+    border: none;
+    border-radius: 12px;
+}
+
+#input2:focus {
+    outline: none;
+}
+
+#icon__arrow {
+    position: relative;
+    transform: translateX(calc(var(--tamanho_input) - 2rem)) translateY(13%) rotateZ(30deg);
+    pointer-events: none;
+}
+
+#input2:focus + #icon__arrow {
+    animation: anim_arrow 0.6s ease-in-out 0s 1 normal;
+}
+
+.icons {
+    width: 1.7rem;
+}
+
+#content__button {
+    width: 13rem;
+
+    cursor: pointer;
+    transition: 0.2s;
+
+    padding: 0.7rem 0;
+    margin: 3rem 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+
+    border: 2px solid var(--orange);
+    border-radius: 5px;
+    color: var(--white);
+    background-color: var(--orange);
+}
+
+#content__button:hover {
+    transition: 0.2s;
+    background-color: var(--black);
+    border-color: var(--black);
+    color: var(--white);
+}
+
+#content__button:active {
+    background-color: var(--white);
+    border-color: var(--white);
+    color: var(--black);
+}
+
+@keyframes anim_location {
+	0% {
+        position: relative;
+        pointer-events: none;
+
+        transform: translateX(calc(var(--tamanho_input) - 2rem)) translateY(23%);
+        opacity: 0;
+	}
+
+    75% {
+        position: relative;
+        pointer-events: none;
+
+        transform: translateX(calc(var(--tamanho_input) - 2rem)) translateY(2%);
+	}
+
+    100% {
+        position: relative;
+        pointer-events: none;
+
+        transform: translateX(calc(var(--tamanho_input) - 2rem)) translateY(23%);
+        opacity: 1;
+	}
+}
+
+@keyframes anim_arrow {
+    0% {
+        position: relative;
+        pointer-events: none;
+
+        transform: translateX(calc(var(--tamanho_input) - 3rem)) translateY(13%) rotateZ(-35deg);
+        opacity: 0;
+
+    }
+
+    100% {
+        position: relative;
+        pointer-events: none;
+       
+        transform: translateX(calc(var(--tamanho_input) - 2rem)) translateY(13%) rotateZ(30deg);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" href="images/logo.png">
+    <title>GoMoto - MotoTaxi</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyA65ggilWe2g9cta4LPBOx7AMgQ5K3yBq4"></script>
+</head>
+<body>
+
+    <div id="container">
+
+        <header id="content__header">
+            <img src="images/logo.png" href="index.html" id="header__img" alt="Logo">
+            <div id="header__links">
+                <a href="index.html" class="link__item" id="selected">Início</a>
+                <a href="#" class="link__item">Trabalhe Conosco</a>
+                <a href="#" class="link__item">Entrar</a>
+                <a href="#" class="link__item">Registrar</a>            
+            </div>
+        </header>
+
+        <div id="container__background">
+        <div id="container__background--dark">
+
+            <div id="container__content">
+
+                <main id="content__main2">
+
+                </main>
+
+                <main id="content__main">
+
+                    <h1 id="content__title">Sua Viagem Mais <br><label id="content__title--contrast">Econômica</label>
+                        com a GoMoto</h1>
+
+                    <div id="content__inputs">
+                        <div class="input__item">
+                            <input id="input" type="text" placeholder="Seu Local aqui..." required>
+                            <img id="icon__location" class="icons" src="images/icon_location.png">
+                        </div>
+
+                        <div class="input__item">
+                            <input id="input2" type="text" placeholder="Seu Destino aqui..." required>
+                            <img id="icon__arrow" class="icons" src="images/icon_arrow.png">
+                        </div>
+                    </div>
+
+                    <a href="loading.html" id="content__button">Enviar</a>
+
+                </main>
+
+            </div>
+        
+        </div>
+        </div>
+
+    </div>
+    <script src="js/inputs.js" type="text/javascript"></script>
+    <script src="js/loading.js" type="text/javascript"></script>
+</body>
+
+</html>
